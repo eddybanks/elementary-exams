@@ -1,14 +1,20 @@
-import React, { Component } from 'react';
-import '../stylesheets/App.css';
+import React from 'react'
+import Container from '@material-ui/core/Container'
+import { Typography } from '@material-ui/core'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <p>Will work on this soon!</p>
-      </div>
-    );
-  }
+import '../stylesheets/App.css'
+
+import NavigationContainer from './Navigation/NavigationContainer'
+
+const App = () => {
+  return (
+    <Container maxWidth="sm">
+      <NavigationContainer />
+      <Typography>
+        Hello
+      </Typography>
+    </Container>
+  )
 }
 
 export default App;
